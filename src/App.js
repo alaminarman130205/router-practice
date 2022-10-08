@@ -7,6 +7,7 @@ import Products from "./components/Products/Products";
 import Main from "./Layout/Main";
 import Friends from "./components/Friends/Friends";
 import Details from "./components/FriendDetails/Details";
+import Post from "./components/Post/Post";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ function App() {
             );
           },
           element: <Details></Details>,
+        },
+        {
+          path: "/post",
+          element: <Post></Post>,
         },
       ],
     },
